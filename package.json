@@ -1,0 +1,33 @@
+{
+  "name": "testback",
+  "version": "1.0.0",
+  "description": "Dossier de test",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "✔️_sandBox": " node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Idric974/testBack.git"
+  },
+  "author": "Idric_Evarne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Idric974/testBack/issues"
+  },
+  "homepage": "https://github.com/Idric974/testBack#readme",
+  "dependencies": {
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "archiver": "^5.3.0",
+    "axios": "^0.26.1",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "keyword-extractor": "^0.0.21",
+    "nice-invoice": "^1.1.8",
+    "nodemon": "^2.0.19",
+    "socket.io": "^4.4.0",
+    "ytdl-core": "^4.11.0",
+    "zip-a-folder": "^1.1.3"
+  }
+}

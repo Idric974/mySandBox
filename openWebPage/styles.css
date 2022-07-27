@@ -1,0 +1,35 @@
+.box,
+.myIframeBox,
+.myIframe,
+.getDataButtonBox,
+.getDataButton {
+  /* border: solid red 1px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.myIframeBox {
+  /* border: solid green 1px; */
+  width: 100%;
+}
+
+.myIframe {
+  /* border: solid yellow 1px; */
+  width: 100%;
+  height: 90vh;
+}
+
+.getDataButtonBox {
+  width: 100%;
+  height: 5vh;
+
+  margin: 10px 0px 0px 0px;
+}
+
+.getDataButton {
+  width: 95%;
+}
