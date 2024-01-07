@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="sytles_Amadeus.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="amadeus-flight-search-form">
+      <form
+        classe="myFormClic974"
+        action=""
+        method="POST"
+        id="flight-search-form"
+      >
+        <!-- Bloc choix d'un vol aller-retour et de l’aéroport de départ et de retour. -->
+
+        <div class="aller-retour-choix-aeroport">
+          <div class="aller-retour-select">
+            <label for="trip-type">Type de vol:</label>
+            <select id="trip-type" name="trip_type">
+              <option value="one_way">Aller simple</option>
+              <option value="round_trip">Aller-retour</option>
+            </select>
+          </div>
+
+          <div class="aller-retour-aeroport">
+            <div class="aller-aeroport">
+              <label for="departure-airport">Aéroport de départ:</label>
+              <select id="departure-airport" name="departure_airport" required>
+                <option value="RUN">La Réunion</option>
+                <option value="MAU">Ile Maurice</option>
+              </select>
+            </div>
+
+            <div class="retour-aeroport">
+              <label for="departure-airport">Aéroport d'arrivé:</label>
+              <select id="departure-airport" name="departure_airport" required>
+                <option value="RUN">La Réunion</option>
+                <option value="MAU">Ile Maurice</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloc date de départ et date d'arrivée -->
+        <div class="dates-vols">
+          <div class="dates-vols-depart">
+            <label for="departure-date">Date de départ:</label>
+            <input
+              type="date"
+              id="departure-date"
+              name="departure_date"
+              required
+            />
+          </div>
+
+          <div class="dates-vols-retour">
+            <label for="return-date">Date de retour:</label>
+            <input type="date" id="return-date" name="return_date" />
+          </div>
+        </div>
+
+        <!-- Bloc gestion des passagers -->
+        <div class="type-passsager">
+          <div class="type-passager-box">
+            <label class="type-passager-label" for="passager-bebe"
+              >Bébé 0 à 23 mois</label
+            >
+            <input
+              class="type-passager-input"
+              type="number"
+              name="passager-bebe"
+              min="0"
+              step="1"
+              max="23"
+            />
+          </div>
+
+          <div class="type-passager-box">
+            <label class="type-passager-label" for="passager-bebe"
+              >Enfant 2 à 11 ans</label
+            >
+            <input
+              class="type-passager-input"
+              type="number"
+              name="passager-bebe"
+              min="2"
+              step="1"
+              max="11"
+            />
+          </div>
+
+          <div class="type-passager-box">
+            <label class="type-passager-label" for="passager-bebe"
+              >Jeune 12 à 17 ans
+            </label>
+            <input
+              class="type-passager-input"
+              type="number"
+              name="passager-bebe"
+              min="12"
+              step="1"
+              max="17"
+            />
+          </div>
+
+          <div class="type-passager-box">
+            <label class="type-passager-label" for="passager-bebe"
+              >Jeune 18 à 24 ans</label
+            >
+            <input
+              class="type-passager-input"
+              type="number"
+              name="passager-bebe"
+              min="18"
+              step="1"
+              max="24"
+            />
+          </div>
+
+          <div class="type-passager-box">
+            <label class="type-passager-label" for="passager-bebe"
+              >Etudiant 17 à 29 ans</label
+            >
+            <input
+              class="type-passager-input"
+              type="number"
+              name="passager-bebe"
+              min="17"
+              step="1"
+              max="29"
+            />
+          </div>
+
+          <div class="type-passager-box">
+            <label class="type-passager-label" for="passager-bebe"
+              >Adulte 24 à 64 ans</label
+            >
+            <input
+              class="type-passager-input"
+              type="number"
+              name="passager-bebe"
+              min="24"
+              step="1"
+              max="64"
+            />
+          </div>
+
+          <div class="type-passager-box">
+            <label class="type-passager-label" for="passager-bebe"
+              >Senior 65 à plus</label
+            >
+            <input
+              class="type-passager-input"
+              type="number"
+              name="passager-bebe"
+              min="65"
+              step="1"
+              max="120"
+            />
+          </div>
+        </div>
+
+        <!-- Block choix du confort lors du vol -->
+        <div class="type-confort">
+          <div class="choix-confort">
+            <label for="departure-airport">Choix de la class:</label>
+            <select id="departure-airport" name="departure_airport" required>
+              <option value="economique">Classe Economique</option>
+              <option value="premium-economique">
+                Classe Premium Economique
+              </option>
+              <option value="class-business">Class Business</option>
+              <option value="class-la-premiere">Class La première</option>
+            </select>
+          </div>
+
+          <input class="submit-button" type="submit" value="Rechercher" />
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

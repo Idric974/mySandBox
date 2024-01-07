@@ -1,0 +1,98 @@
+<style>
+  .container {
+    /* border: solid 1px black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faqBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
+    border: solid 1px black;
+    border-radius: 5px;
+  }
+
+  .questionBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px 5px 5px;
+  }
+
+  .questionIcon {
+    width: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .question {
+    /* border: solid red 1px; */
+    width: 96%;
+    padding: 3px 0px 0px 5px;
+    font-weight: bold;
+  }
+
+  .reposeBox {
+    /* border: solid red 1px; */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    padding: 0 0px 0 5px;
+    margin-left: 25px;
+    width: 95%;
+  }
+
+  .reposeBox.visible {
+    opacity: 1;
+    max-height: 200px; /* Vous pouvez ajuster cette valeur en fonction de la hauteur maximale attendue pour votre contenu */
+    padding: 5px 0px 5px 5px;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const icons = document.querySelectorAll(".faqBox");
+
+    icons.forEach((icon) => {
+      icon.addEventListener("click", function () {
+        // Masquer toutes les divs avec la classe reposeBox
+        const allReposeBoxes = document.querySelectorAll(".reposeBox");
+
+        allReposeBoxes.forEach((box) => {
+          box.classList.remove("visible");
+        });
+
+        // Afficher uniquement la div reposeBox associée à l'icône cliquée
+        const parentFaqBox = this.closest(".faqBox");
+        const reposeBoxToShow = parentFaqBox.querySelector(".reposeBox");
+        reposeBoxToShow.classList.add("visible");
+      });
+    });
+  });
+</script>
+
+<div class="container">
+  <h2>Foire aux questions</h2>
+
+  <dix class="faqBox" id="faqBoxId">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <h2 class="question">
+        1 Pourquoi le miel de Manuka est-il plus cher que les autres miels?
+      </h2>
+    </div>
+    <p class="reposeBox">
+      Le miel de Manuka est plus cher en raison de ses propriétés uniques, de sa
+      rareté et du processus de production limité à certaines régions de la
+      Nouvelle-Zélande et de l'Australie.
+    </p>
+  </dix>
+</div>

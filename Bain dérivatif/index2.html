@@ -1,0 +1,34 @@
+<style>
+  body {
+    background-color: red; /*Rouge*/
+  }
+  .conteneur-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #99f; /*Bleu*/
+  }
+
+  .element-flex {
+    flex: 0 1 20%;
+    background-color: #fc8; /*Jaune*/
+    height: 50px;
+    margin: 10px;
+  }
+
+  /*Pour tous les appareils équipés d'écrans et dont la taille est inférieure à 780px*/
+  @media screen and (max-width: 780px) {
+    body {
+      background-color: #848; /*Violet*/
+    }
+    .conteneur-flex {
+      flex-flow: column wrap;
+    }
+  }
+</style>
+
+<div class="conteneur-flex">
+  <div class="element-flex">1</div>
+  <div class="element-flex">2</div>
+  <div class="element-flex">3</div>
+</div>

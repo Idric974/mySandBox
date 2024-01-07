@@ -1,0 +1,282 @@
+<style>
+  .container {
+    /* border: solid 1px black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faqBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
+    border: solid 1px black;
+    border-radius: 5px;
+  }
+
+  .questionBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px 5px 5px;
+  }
+
+  .questionIcon {
+    width: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .question {
+    /* border: solid red 1px; */
+    width: 96%;
+    padding: 3px 0px 0px 5px;
+    font-weight: bold;
+  }
+
+  .reposeBox {
+    /* border: solid red 1px; */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    padding: 0 0px 0 5px;
+    margin-left: 25px;
+    width: 95%;
+  }
+
+  .reposeBox.visible {
+    opacity: 1;
+    max-height: 200px;
+    padding: 5px 0px 5px 5px;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const icons = document.querySelectorAll('.faqBox');
+
+    icons.forEach((icon) => {
+      icon.addEventListener('click', function () {
+        const allReposeBoxes = document.querySelectorAll('.reposeBox');
+        allReposeBoxes.forEach((box) => {
+          box.classList.remove('visible');
+        });
+        const parentFaqBox = this.closest('.faqBox');
+        const reposeBoxToShow = parentFaqBox.querySelector('.reposeBox');
+        reposeBoxToShow.classList.add('visible');
+      });
+    });
+  });
+</script>
+
+<div class="container">
+  <h2>Foire aux questions</h2>
+
+  <!------------ Question box 1 ------------>
+
+  <div class="faqBox">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <div class="question">
+        1. Combien de temps faut-il pour voir les premiers effets du bain
+        dérivatif?
+      </div>
+    </div>
+    <div class="reposeBox">
+      <p>
+        Les effets du bain dérivatif peuvent varier d'une personne à l'autre,
+        mais en général, il faut plusieurs semaines de pratique régulière pour
+        constater des changements significatifs.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------ -->
+
+  <!------------ Question box 2------------>
+
+  <div class="faqBox">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <div class="question">
+        2. Peut-on observer une perte de poids rapidement avec le bain
+        dérivatif?
+      </div>
+    </div>
+    <div class="reposeBox">
+      <p>
+        La perte de poids n'est pas garantie et peut prendre un certain temps.
+        Les effets sur la perte de poids sont généralement plus subtils et
+        graduels.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------ -->
+
+  <!------------ Question box 3------------>
+
+  <div class="faqBox">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <div class="question">
+        3. Quand commence-t-on à ressentir une amélioration de la digestion?
+      </div>
+    </div>
+    <div class="reposeBox">
+      <p>
+        Certains utilisateurs ont signalé une amélioration de la digestion après
+        quelques semaines de pratique régulière.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------ -->
+
+  <!------------ Question box 4------------>
+
+  <div class="faqBox">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <div class="question">
+        4. Le bain dérivatif est-il efficace pour l'amélioration du sommeil?
+      </div>
+    </div>
+    <div class="reposeBox">
+      <p>
+        Il est possible que le bain dérivatif aide à améliorer la qualité du
+        sommeil après quelques semaines de pratique, bien que les résultats
+        varient.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------ -->
+
+  <!------------ Question box 5------------>
+
+  <div class="faqBox">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <div class="question">
+        5. Combien de temps cela prend-il pour que le bain dérivatif affecte
+        l'humeur ou le stress?
+      </div>
+    </div>
+    <div class="reposeBox">
+      <p>
+        Les effets sur l'humeur et le stress peuvent prendre quelques semaines à
+        plusieurs mois pour devenir apparents.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------ -->
+
+  <!------------ Question box 6------------>
+
+  <div class="faqBox">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <div class="question">
+        6. Est-ce que les effets du bain dérivatif sont durables?
+      </div>
+    </div>
+    <div class="reposeBox">
+      <p>
+        Les effets peuvent être durables, surtout si la pratique du bain
+        dérivatif est régulière et fait partie d'un mode de vie sain.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------ -->
+
+  <!------------ Question box 7------------>
+
+  <div class="faqBox">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <div class="question">
+        7. À quelle fréquence devrais-je pratiquer le bain dérivatif pour voir
+        des résultats?
+      </div>
+    </div>
+    <div class="reposeBox">
+      <p>
+        La fréquence optimale peut varier, mais de nombreuses personnes trouvent
+        qu'une pratique quotidienne ou plusieurs fois par semaine est efficace.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------ -->
+
+  <!------------ Question box 8------------>
+
+  <div class="faqBox">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <div class="question">
+        8. Combien de temps dure chaque session de bain dérivatif pour qu'elle
+        soit efficace?
+      </div>
+    </div>
+    <div class="reposeBox">
+      <p>
+        La durée peut varier, mais une session typique dure entre 10 et 30
+        minutes.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------ -->
+
+  <!------------ Question box 9------------>
+
+  <div class="faqBox">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <div class="question">
+        9. Y a-t-il un moment optimal de la journée pour pratiquer le bain
+        dérivatif?
+      </div>
+    </div>
+    <div class="reposeBox">
+      <p>
+        Certains trouvent qu'il est plus efficace le matin ou le soir, mais le
+        moment optimal peut varier d'une personne à l'autre.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------ -->
+
+  <!------------ Question box 10------------>
+
+  <div class="faqBox">
+    <div class="questionBox">
+      <div class="questionIcon">➕</div>
+      <div class="question">
+        10. Peut-on attendre des résultats immédiats dans des cas de maladies
+        chroniques?
+      </div>
+    </div>
+    <div class="reposeBox">
+      <p>
+        Le bain dérivatif n'est pas un traitement médical et son efficacité dans
+        le traitement des maladies chroniques n'est pas prouvée. Il est toujours
+        recommandé de consulter un professionnel de la santé pour un diagnostic
+        et un traitement appropriés.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------ -->
+</div>

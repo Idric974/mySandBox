@@ -1,0 +1,139 @@
+.amadeus-flight-search-form {
+  /* border: solid red 1px; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.aller-retour-choix-aeroport,
+.dates-vols,
+.type-passsager,
+.type-confort,
+.submit-button {
+  /* border: solid red 1px; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px 10px 0px;
+}
+
+/** Bloc choix d'un vol aller-retour et de l’aéroport de départ et de retour. **/
+
+.aller-retour-select {
+  width: 25%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  border: solid black 1px;
+  border-radius: 5px;
+  border: solid 1px #f39200;
+  cursor: pointer;
+}
+
+.aller-retour-aeroport {
+  width: 74%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aller-aeroport {
+  width: 49%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  border: solid 1px #f39200;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.retour-aeroport {
+  width: 49%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  border: solid 1px #f39200;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/** Bloc date de départ et date d'arrivée **/
+
+.dates-vols-depart,
+.dates-vols-retour {
+  width: 49%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  border: solid 1px #f39200;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/** Bloc gestion des passagers **/
+
+.type-passager-box {
+  border: solid 1px #f39200;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.type-passager-label {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+.type-passager-input {
+  width: 80%;
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+/** Block choix du confort lors du vol **/
+
+.choix-confort {
+  width: 49%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  border: solid 1px #f39200;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 20%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #f39200;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}

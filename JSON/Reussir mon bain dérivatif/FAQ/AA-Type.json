@@ -1,0 +1,31 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Article",
+  "headline": "Bain Dérivatif effets au bout de combien de temps?",
+  "description": "Cet article explore les différents effets du bain dérivatif et le temps nécessaire pour les constater. Que vous cherchiez à améliorer votre bien-être général, à gérer le stress ou à améliorer votre digestion, ce guide vous donnera un aperçu complet des bénéfices que vous pouvez attendre et dans quels délais.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://reussir-mon-bain-derivatif.fr/wp-content/uploads/2023/09/bain-derivatif-effets-au-bout-de-combien-de-temps.webp",
+    "width": "640",
+    "height": "360"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Alexis Dupuis",
+    "url": "https://reussir-mon-bain-derivatif.fr/wp-content/uploads/2023/03/alexis.dupuis.webp"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Réussir Mon Bain Dérivatif",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://reussir-mon-bain-derivatif.fr/wp-content/uploads/2023/02/favicon-reussir-mon-bain-derivatif.webp",
+      "width": "500",
+      "height": "500"
+    }
+  },
+  "datePublished": "2023-09-19",
+  "dateModified": "2023-09-19"
+}
+</script>

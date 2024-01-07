@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <!-- Votre code HTML ici -->
+
+    <button id="download">Télécharger les mots</button>
+
+    <script>
+      // Sélectionne la div avec la classe bg_fff
+      let div = document.querySelector('.bg_fff');
+
+      // Sélectionne toutes les balises p avec la classe keyword_text_value_popup dans cette div
+      let paragraphs = div.querySelectorAll('.keyword_text_value_popup');
+
+      // Crée un tableau pour stocker les mots
+      let words = [];
+
+      // Parcourt chaque paragraphe et ajoute son texte au tableau
+      paragraphs.forEach(function (p) {
+        words.push(p.textContent);
+      });
+
+      // Crée une chaîne avec tous les mots, séparés par une virgule
+      let wordsString = words.join(', ');
+
+      // Crée un lien de téléchargement lorsque l'utilisateur clique sur le bouton
+      document.getElementById('download').addEventListener(
+        'click',
+        function () {
+          // Crée un objet Blob avec les mots
+          let blob = new Blob([wordsString], { type: 'text/plain' });
+
+          // Crée un URL pour le Blob
+          let url = URL.createObjectURL(blob);
+
+          // Crée un élément de lien temporaire
+          let a = document.createElement('a');
+          a.href = url;
+          a.download = 'mots.txt';
+
+          // Ajoute l'élément de lien à la page
+          document.body.appendChild(a);
+
+          // Simule un clic sur l'élément de lien
+          a.click();
+
+          // Retire l'élément de lien de la page
+          document.body.removeChild(a);
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

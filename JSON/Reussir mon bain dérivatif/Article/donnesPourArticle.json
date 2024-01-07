@@ -1,0 +1,34 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://reussir-mon-bain-derivatif.fr/ou-acheter-poche-de-gel-bain-derivatif/"
+  },
+  "headline": "Où acheter poche de gel bain dérivatif ?",
+  "description": "Découvrez où vous pouvez acheter vos poches de gel pour pratiquer votre bain dérivatif.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://reussir-mon-bain-derivatif.fr/wp-content/uploads/2023/02/favicon-reussir-mon-bain-derivatif.webp",
+    "width": "",
+    "height": ""
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Alexis Dupuis",
+    "url":"https://reussir-mon-bain-derivatif.fr/accueil/a-propos/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Réussir Mon Bain Dérivatif",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://reussir-mon-bain-derivatif.fr/wp-content/uploads/2023/02/favicon-reussir-mon-bain-derivatif.webp",
+      "width": "",
+      "height": ""
+    }
+  },
+  "datePublished": "2023-03-25"
+}
+</script>

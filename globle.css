@@ -306,3 +306,7 @@ div.wpforms-container-full {
 .wpforms-form {
   background-color: #ffb600;
 }
+
+p {
+  line-height: 30px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="sytles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="amadeus-flight-search-form">
+      <form
+        class="flightSearchForm"
+        action=""
+        method="POST"
+        id="flight-search-lgtv"
+      >
+        <div class="boxAlleeRetourDepartArrivee">
+          <div class="boxAlleeRetour">
+            <label for="TypeDeVol">Type de vol</label>
+            <select id="TypeDeVolId" name="typeDeVol">
+              <option value="one_way">Aller simple</option>
+              <option value="round_trip">Aller-retour</option>
+            </select>
+          </div>
+
+          <div class="boxDepart">
+            <label for="aeroportDepart">Aéroport de départ</label>
+            <select id="aeroportDepartId" name="aeroportDepart">
+              <option value="runStDenis">La Réunion St Denis</option>
+              <option value="runStPierre">La Réunion St Pierre</option>
+            </select>
+          </div>
+
+          <div class="boxArrivee">
+            <label for="aeroportArrivee">Aéroport de départ</label>
+            <select id="aeroportArriveeId" name="aeroportArrivee">
+              <option value="runStDenis">La Réunion St Denis</option>
+              <option value="runStPierre">La Réunion St Pierre</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="boxDateDepartDateArriveClass">
+          <div class="boxDateDepart">
+            <label for="dateDepart">Date de départ:</label>
+            <input type="date" id="dateDepartId" name="dateDepart" required />
+          </div>
+
+          <div class="boxDateDepart">
+            <label for="dateArrive">Date d'arrive</label>
+            <input type="date" id="ArriveId" name="dateArrive" required />
+          </div>
+
+          <div class="boxClass">
+            <label for="class">Class</label>
+            <select id="classId" name="classPassager">
+              <option value="Economie">Economie</option>
+              <option value="Business">Business</option>
+              <option value="Premiere">Première</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="boxPassager">
+          <div class="boxAdulte">
+            <label for="class">Nombre d'adulte</label>
+            <input
+              type="number"
+              name="passagerAdulte"
+              min="0"
+              max="9"
+              step="1"
+            />
+          </div>
+
+          <div class="boxEnfant">
+            <label for="class">Nombre d'enfant</label>
+            <input
+              type="number"
+              name="passagerEnfant"
+              min="0"
+              max="9"
+              step="1"
+            />
+          </div>
+
+          <div class="boxBebe">
+            <label for="class">Nombre de bébé</label>
+            <input type="number" name="passagerBebe" min="0" max="9" step="1" />
+          </div>
+        </div>
+
+        <div class="boxButton">
+          <input type="submit" value="Rechercher" />
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

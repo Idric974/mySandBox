@@ -1,0 +1,138 @@
+/** Conteneur du formulaire **/
+
+.amadeus-flight-search-form {
+  /* border: solid red 2px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/** ------------------------------------------- **/
+
+/** Box formulaire **/
+
+.flightSearchForm {
+  /* border: solid blue 1px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/** ------------------------------------------- **/
+
+/** Box allée/Retour départ arrivée **/
+
+.boxAlleeRetourDepartArrivee {
+  /* border: solid blue 1px; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.boxAlleeRetour,
+.boxDepart,
+.boxArrivee {
+  /* border: solid green 1px; */
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 10px 0px;
+  padding: 5px 5px 5px 5px;
+}
+
+.boxAlleeRetour label,
+.boxDepart label,
+.boxArrivee label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
+
+/** ------------------------------------------- **/
+
+/** Box date départ arrive class **/
+
+.boxDateDepartDateArriveClass {
+  /* border: solid blue 1px; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.boxDateDepart,
+.boxDateArrive,
+.boxClass {
+  /* border: solid green 1px; */
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 10px 0px;
+  padding: 5px 5px 5px 5px;
+}
+
+.boxDateDepart label,
+.boxDateArrive label,
+.boxClass label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
+
+/** ------------------------------------------- **/
+
+/** Box passager **/
+
+.boxPassager {
+  /* border: solid blue 1px; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.boxAdulte,
+.boxEnfant,
+.boxBebe {
+  /* border: solid green 1px; */
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 10px 0px;
+  padding: 5px 5px 5px 5px;
+}
+
+.boxAdulte label,
+.boxEnfant label,
+.boxBebe label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
+
+/** ------------------------------------------- **/
+
+/** Box button **/
+
+.boxButton {
+  /* border: solid blue 1px; */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  margin: 10px 10px 10px 0px;
+  padding: 5px 5px 5px 5px;
+}
+
+/** ------------------------------------------- **/

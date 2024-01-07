@@ -1,0 +1,60 @@
+.box {
+    border: solid red 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fieldBox {
+    border: solid black 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+}
+
+.fieldBoxOk {
+    border: solid green 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+
+}
+
+
+.fieldBoxError {
+    border: solid red 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+}
+
+input {
+    border: none;
+    font-size: 1.2rem;
+}
+
+.inputTextValidatorOff {
+    display: none;
+}
+
+.inputTextValidatorOn {
+    color: red;
+    display: block;
+}

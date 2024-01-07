@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<body>
+
+    <style>
+        .myDiv {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            border: solid #BA324F 1px;
+            border-radius: 10px;
+            line-height: 10px;
+            background-color: white;
+
+        }
+
+        .titre {
+            width: 100%;
+            margin: auto;
+            font-size: 1.2rem;
+            padding: 10px 0px 10px 0px;
+            background-color: #BA324F;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nomPhoto {
+            /* border: solid red 1px; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 2px 0px 5px 10px;
+        }
+
+        img {
+            border-radius: 50%;
+            border: solid #BA324F 1px;
+        }
+
+        .emoji {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: solid #BA324F 1px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0px;
+        }
+
+        .myText {
+            color: black;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+    </style>
+
+
+    <div class="myDiv">
+        <div class="titre">Votre naturopathe</div>
+
+        <div class="nomPhoto">
+            <img src="https://pascalesellom.fr/wp-content/uploads/2022/11/pascale_sellom.png">
+            <p class="myText"><b>Pascale Sellom</b></p>
+        </div>
+
+        <div class="nomPhoto">
+            <p class="emoji">📞</p>
+            <p class="myText"> <a href="tel:0692357283">06 92 35 72 83</a></p>
+        </div>
+
+        <div class="nomPhoto">
+            <p class="emoji">📧</p>
+            <p class="myText"> contact@pascalesellom.fr</p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

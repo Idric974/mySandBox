@@ -1,0 +1,88 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce que le miel de Manuka ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le miel de Manuka est un type de miel produit par les abeilles qui butinent les fleurs du Manuka, un arbuste natif de la Nouvelle-Zélande et de l'Australie. Il est réputé pour ses propriétés antibactériennes, anti-inflammatoires et cicatrisantes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quels sont les bienfaits du miel de Manuka pour la peau ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le miel de Manuka peut aider à soigner diverses affections cutanées, grâce à ses propriétés antibactériennes et anti-inflammatoires. Il favorise la guérison des plaies, réduit les rougeurs et les inflammations, et peut aider à traiter des problèmes de peau tels que l'acné ou l'eczéma."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment le miel de Manuka aide-t-il à la cicatrisation des plaies ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le miel de Manuka possède des propriétés cicatrisantes qui aident à accélérer le processus de guérison des plaies. Il crée un milieu humide favorable à la cicatrisation, et ses propriétés antibactériennes aident à prévenir les infections."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on utiliser le miel de Manuka pour traiter l'acné ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, le miel de Manuka peut être utilisé pour traiter l'acné. Ses propriétés antibactériennes aident à éliminer les bactéries qui causent l'acné, tandis que ses propriétés anti-inflammatoires aident à réduire les rougeurs et les inflammations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le miel de Manuka a-t-il des effets antibactériens ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, le miel de Manuka a des effets antibactériens. Il contient un composé appelé Méthylglyoxal (MGO) qui est responsable de ses puissantes propriétés antibactériennes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce que le facteur UMF dans le miel de Manuka et pourquoi est-il important ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le facteur UMF (Unique Manuka Factor) est une mesure de l'activité antibactérienne unique du miel de Manuka. Plus le facteur UMF est élevé, plus le miel est puissant. Un UMF de 10 ou plus indique un miel de Manuka de qualité supérieure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on consommer du miel de Manuka en interne ? Quels en sont les bienfaits ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, le miel de Manuka peut être consommé en interne. Il est connu pour ses bienfaits sur la santé digestive et immunitaire. Il peut également aider à soulager le mal de gorge et autres affections respiratoires."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Où peut-on acheter du miel de Manuka de bonne qualité ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le miel de Manuka de bonne qualité peut être acheté dans les magasins de produits naturels, certaines pharmacies, et en ligne. Assurez-vous de choisir un miel avec un facteur UMF indiqué sur l'emballage pour garantir sa qualité."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-ce que le miel de Manuka peut remplacer un traitement médical ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bien que le miel de Manuka ait de nombreux bienfaits pour la santé, il ne devrait pas être utilisé comme substitut à un traitement médical sans l'avis d'un professionnel de la santé."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment intégrer le miel de Manuka dans sa routine de soins ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le miel de Manuka peut être appliqué directement sur la peau comme un masque facial, utilisé pour nettoyer la peau, ajouté à un bain pour ses propriétés apaisantes, ou consommé en interne pour ses bienfaits pour la santé générale."
+      }
+    }
+  ]
+}
+</script>

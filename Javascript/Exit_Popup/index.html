@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Test d'Exit Popup</h2>
+
+    <div
+      id="exitPopup"
+      style="
+        display: none;
+        position: fixed;
+        width: 300px;
+        height: 200px;
+        background: #ffffff;
+        border: 1px solid #000000;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+      "
+    >
+      <h4>Attendez !</h4>
+      <p>Êtes-vous sûr de vouloir quitter ?</p>
+      <button id="closeBtn">Fermer</button>
+    </div>
+
+    <script>
+      // Sélection de l'élément popup et le bouton fermer
+      let exitPopup = document.getElementById('exitPopup');
+      let closeBtn = document.getElementById('closeBtn');
+
+      // Fermeture du popup
+      closeBtn.addEventListener('click', function () {
+        exitPopup.style.display = 'none';
+      });
+
+      // Détection du départ de la souris de la fenêtre
+      document.addEventListener('mouseleave', function () {
+        exitPopup.style.display = 'block';
+      });
+    </script>
+  </body>
+</html>

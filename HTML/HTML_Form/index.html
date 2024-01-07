@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sytles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="box">
+        <!-- <form onsubmit="return false" id="myForm"> -->
+        <form id="myForm">
+
+            <div class="firstNameFiel">
+                <label for="firstName">Nom :</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <span class="inputTextValidatorOff" id="firstNameSpan">Erreur</span>
+            </div>
+
+            <div class="fieldBox">
+                <label for="lastName">Prénom :</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <span class="inputTextValidatorOff" id="firstNameSpan">Erreur</span>
+            </div>
+
+            <div class="fieldBox">
+                <label for="email">e-mail&nbsp;:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="inputTextValidatorOff" id="firstNameSpan">Erreur</span>
+            </div>
+
+            <div class="fieldBox">
+                <label for="phone">Téléphone&nbsp;:</label>
+                <input type="phone" id="phone" name="phone" required>
+                <span class="inputTextValidatorOff" id="firstNameSpan">Erreur</span>
+            </div>
+
+            <div class="fieldBox">
+                <label for="msg">Message :</label>
+                <textarea id="msg" name="userMessage" required></textarea>
+                <span class="inputTextValidatorOff" id="firstNameSpan">Erreur</span>
+            </div>
+
+            <div class="fieldBox fieldButton">
+                <button type="submit" id="myFrom">Envoyer le message</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
