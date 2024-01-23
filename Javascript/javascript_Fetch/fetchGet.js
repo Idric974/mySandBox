@@ -1,74 +1,18 @@
-console.log('TEST : fetchGet');
+(async function getData() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/user");
 
-
-// let url = 'https://api.github.com/users/xiaotian/repos';
-// let url = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY'
-let url = 'https://jsonplaceholder.typicode.com/users';
-
-const headers = new Headers();
-headers.append("Content-Type", "application/json; charset=UTF-8");
-headers.append("Accept", "application/json; charset=UTF-8");
-//headers.append("Authorization", `Bearer ${token}`);
-
-const queryParameter = {
-    method: "GET",
-    headers: headers,
-
-};
-
-//! Les promesses.
-
-let myPromise = () => {
-    return new Promise((resolve, reject) => {
-
-        fetch(url, queryParameter)
-            .then(res => {
-
-                console.log('⭐ CONSOLE ==> :', res);
-
-                if (res.ok === true) {
-
-                    res.json()
-                        .then((data) => {
-                            console.log('🟢 SUCCESS ==> Data :', data);
-                        })
-                        .then(() => {
-                            resolve();
-                        })
-
-                } else if (res.ok === false) {
-
-                    console.log('🔴 ERROR ==> Page non trouvée erreur :', res.status + res.statusText
-                    );
-
-                    reject();
-                }
-            })
-
-    });
-}
-
-//! -------------------------------------------------
-
-//! Résolution des promesses.
-
-let handleMyPromise = async () => {
-
-    try {
-        await myPromise();
+    if (!response.ok) {
+      throw new Error(`${response.status}`);
     }
-    catch (err) {
-        console.log('❗❗ CATCH ==> handleMyPromise :', err);
-    }
-};
 
-handleMyPromise();
-
-//! -------------------------------------------------
-
-
-
-
-
-
-
+    const getedDatas = await response.json();
+    console.log("⭐ ==> ", { getedDatas });
+  } catch (error) {
+    console.log(
+      `🔴 Catch Error | Une erreur s'est produite |
+    `,
+      error.message
+    );
+  }
+})();

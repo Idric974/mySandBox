@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My Web Socket</h1>
+    <script>
+      const socket = new WebSocket("ws://localhost:5500");
+
+      // Connexion ouverte
+      socket.onopen = function (event) {
+        console.log("Connecté au serveur");
+      };
+
+      // Écouter les messages
+      socket.onmessage = function (event) {
+        console.log("Message du serveur:", event.data);
+        if (event.data === "message du serveur") {
+          setTimeout(() => {
+            location.reload();
+          }, 2000);
+        }
+      };
+
+      socket.onerror = function (error) {
+        console.log(`Erreur WebSocket: ${error}`);
+      };
+
+      socket.onclose = function (event) {
+        console.log("Connexion WebSocket fermée");
+      };
+    </script>
+
+    <!-- <script src="./main.js"></script> -->
+  </body>
+</html>

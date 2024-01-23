@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Speech API Demo</title>
+  </head>
+  <body>
+    <h1>Web Speech API Demo</h1>
+
+    <button id="start-recognition">Start Recognition</button>
+    <p id="transcript">Transcript:</p>
+
+    <button id="speak-text">Speak Text</button>
+    <input type="text" id="text-to-speak" placeholder="Enter text to speak" />
+
+    <script>
+      // Vérifier la prise en charge de l'API
+      if (!("webkitSpeechRecognition" in window)) {
+        alert("Your browser does not support the Web Speech API");
+      } else {
+        // Reconnaissance vocale
+        var recognition = new webkitSpeechRecognition();
+        recognition.lang = "fr-FR";
+        recognition.continuous = true;
+        recognition.interimResults = true;
+
+        recognition.onresult = function (event) {
+          var transcript = event.results[event.resultIndex][0].transcript;
+          document.getElementById("transcript").textContent =
+            "Transcript: " + transcript;
+        };
+
+        document.getElementById("start-recognition").onclick = function () {
+          recognition.start();
+        };
+
+        // Synthèse vocale
+        document.getElementById("speak-text").onclick = function () {
+          var text = document.getElementById("text-to-speak").value;
+          var utterance = new SpeechSynthesisUtterance(text);
+          speechSynthesis.speak(utterance);
+        };
+      }
+    </script>
+  </body>
+</html>
